@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Liskon vihreä lautanen </title>
+    <meta name="description" content="Inspiroivia vegaanireseptejä ja kasvipohjaista ruokaa rakkaudella. Tervetuloa Liskon vihreälle lautaselle!">
+    <meta name="keywords" content="vegaaniruoka, vegaanireseptit, kasvisruoka, terveellinen ruoka, ympäristöystävällinen, ruokablogi, Liskon vihreä lautanen">
+    <meta name="author" content="Elizaveta Maevskaia">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+  
+   <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+    <div class="logo">
+      <a href="index.html">
+      <img src="logo.png" alt="Liskon vihreä lautanen - logo"> </a>
+    </div>
+      <div class="menu-container">
+          <img src="burger.png" class="menu-icon" alt="Menu">
+          <nav id="menu" class="menu">
+              <ul class="navigaatio"> 
+                <li><a href="index.html">KOTI</a></li>
+                <li><a href="reseptit.html">RESEPTIT</a></li>
+                <li><a href="blogi.html">BLOGI</a></li>
+                <li><a href="yhteistiedot.html">OTA YHTEYTTÄ</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+</header>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.querySelector(".menu-icon");
+        const menu = document.querySelector(".menu");
+
+        menuIcon.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        });
+    });
+  </script>
+  <main>
+    <section>
+    <div class="flex-container">
+        <div class="kotikuva">
+          <img src="KotiKuva.png" alt="Kasvislautanen ja lisko lautasen reunassa">
+        </div>
+        <div class="text-container">
+          <h1> <span class="korostus"> Liskon vihreä lautanen </span> </h1>
+          <p> Tervetuloa Liskon vihreälle lautaselle! 🦎💚 </p>
+          <p> Hei ja tervetuloa sivustolleni! Olen intohimoinen kasvisruoan ystävä, joka on vuosien ajan kerännyt ja kokeillut herkullisia vegaanireseptejä. Halusin luoda paikan, jossa voin jakaa nämä reseptit helposti ja inspiroida muita tutustumaan kasvipohjaiseen ruokaan. Täältä löydät monipuolisia reseptejä, tietoa vegaanisesta ruokavaliosta ja vinkkejä herkulliseen, terveelliseen ja kestävään ruokailuun. Toivon, että löydät sivustoltani inspiraatiota, iloa ja uusia suosikkireseptejä! Mukavia kokkaushetkiä - ja muista, että vihreä lautanen on täynnä mahdollisuuksia! 💚✨ </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+    <h2> <span class="korostus"> Suosittuja reseptejä </span> </h2>
+    <ul class="listStyleType">
+        <li><a class="list" href="reseptit.html#bataattikeitto">Bataattikeitto</a></li>
+        <li><a class="list" href="reseptit.html#menemen">Menemen</a></li>
+        <li><a class="list" href="reseptit.html#banana-bread">Banana bread muffinsit</a></li>
+    </ul>
+  </section>
+  </main>      
+    <footer>
+      <p><span class="korostus"> 
+        Liskon vihreä lautanen </span><br> Lisa Maevskaia <br> lisa.maevskaia@gmail.com</p>
+    </footer>
+</body>
+</html>
