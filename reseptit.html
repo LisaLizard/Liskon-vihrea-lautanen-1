@@ -1,156 +1,201 @@
+
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Reseptit - Liskon vihreä lautanen</title>
-    <meta name="description" content="Tutustu herkullisiin ja helppoihin vegaaniresepteihin. Kasviskeittoja, lämpimiä ruokia ja makeita leivonnaisia – kaikkea vihreän lautasen ystäville.">
-    <meta name="keywords" content="vegaanireseptit, kasvisruoka, kasviskeitto, vegaanileivonta, terveellinen ruoka, reseptit, Liskon vihreä lautanen">
-    <meta name="author" content="Elizaveta Maevskaia">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
-
-  
-   <link href="tyyli.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reseptit - Liskon vihreä lautanen</title>
+  <meta name="author" content="Elizaveta Maevskaia" />
+  <meta name="description" content="Tutustu herkullisiin ja helppoihin vegaaniresepteihin. Kasviskeittoja, lämpimiä ruokia ja makeita leivonnaisia – kaikkea vihreän lautasen ystäville." />
+  <meta name="keywords" content="vegaanireseptit, kasvisruoka, kasviskeitto, vegaanileivonta, terveellinen ruoka, reseptit, Liskon vihreä lautanen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tyyli.css" />
 </head>
-
 <body>
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <a href="index.html">
-        <img src="Kuvat/logo.png" alt="Liskon vihreä lautanen - logo"> </a>
-      </div>
-        <div class="menu-container">
-            <img src="Kuvat/burger.png" class="menu-icon" alt="Menu">
-            <nav id="menu" class="menu">
-                <ul class="navigaatio"> 
-                  <li><a href="index.html">KOTI</a></li>
-                  <li><a href="reseptit.html">RESEPTIT</a></li>
-                  <li><a href="blogi.html">BLOGI</a></li>
-                  <li><a href="minusta.html">MINUSTA</a></li>
-                </ul>
-            </nav>
-        </div>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Liskon vihreä lautanen — etusivu">
+        <img src="Kuvat/logo.png" alt="Liskon vihreä lautanen — logo" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Avaa valikko" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Koti</a>
+        <a href="reseptit.html" class="active">Reseptit</a>
+        <a href="blogi.html">Blogi</a>
+        <a href="minusta.html">Minusta</a>
+      </nav>
     </div>
   </header>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuIcon = document.querySelector(".menu-icon");
-        const menu = document.querySelector(".menu");
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow center">Reseptit</span>
+      <h1>Reseptit</h1>
+      <p>Herkullisia ja helppoja vegaanireseptejä keitoista lämpimiin ruokiin ja makeisiin leivonnaisiin.</p>
+      <div class="chips">
+        <a href="#bataattikeitto" class="chip">Bataattikeitto</a>
+        <a href="#menemen" class="chip">Menemen</a>
+        <a href="#banana-bread" class="chip">Banana bread muffinsit</a>
+      </div>
+    </div>
+  </section>
 
-        menuIcon.addEventListener("click", function () {
-            menu.classList.toggle("active");
-        });
+  <main>
+    <!-- Bataattikeitto -->
+    <section class="recipe-detail" id="bataattikeitto">
+      <div class="container recipe-layout">
+        <div class="recipe-photo">
+          <img src="Kuvat/Reseptitsivu_kuvat/Bataattikeitto.png" alt="Bataattikeitto" />
+          <div class="meta">
+            <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>40–45 min</span>
+            <span class="meta-pill">Keitto</span>
+          </div>
+        </div>
+        <div class="recipe-info">
+          <span class="eyebrow">Keitto</span>
+          <h2>Bataattikeitto</h2>
+          <p class="block-title">Ainekset</p>
+          <ul class="ainekset">
+            <li>1 rkl (15 ml) oliiviöljyä</li>
+            <li>1 keskikokoinen sipuli kuutioituna</li>
+            <li>1 keskikokoinen purjo, kuituiset lehdet poistettu, hienonnettu</li>
+            <li>2 valkosipulinkynttä, viipaloitu</li>
+            <li>2½ kasvisliemikuutiota</li>
+            <li>5 kupillista (1200 ml) vettä</li>
+            <li>1 kesäkurpitsa, hienonnettuna</li>
+            <li>1 porkkana, hienonnettuna</li>
+            <li>1 keskikokoinen peruna, leikattu 1 cm:n kuutioiksi</li>
+            <li>1 iso bataatti, leikattu 1 cm:n kuutioiksi</li>
+            <li>mausteet</li>
+          </ul>
+          <p class="block-title">Valmistus</p>
+          <ol class="steps">
+            <li>Kuumenna öljy isossa kattilassa korkealla lämmöllä. Kun se on kuuma, lisää sipuli, purjo ja valkosipuli. Keitä 5 minuuttia.</li>
+            <li>Lisää loput ainekset. Keitä hiljaisella lämmöllä osittain kannen alla 15 minuuttia tai kunnes perunat ovat kypsiä.</li>
+            <li>Sekoita osa keitosta sauvasekoittimella, mutta jätä muutama paloina jäämään. Vaihtoehtoisesti voit käyttää seisova tehosekoitinta, jolloin on suositeltavaa sekoittaa noin puolet keitosta.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menemen -->
+    <section class="recipe-detail" id="menemen">
+      <div class="container recipe-layout">
+        <div class="recipe-photo">
+          <img src="Kuvat/Reseptitsivu_kuvat/Menemen.png" alt="Menemen" />
+          <div class="meta">
+            <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>30 min</span>
+            <span class="meta-pill">Lämmin ruoka</span>
+          </div>
+        </div>
+        <div class="recipe-info">
+          <span class="eyebrow">Lämmin ruoka</span>
+          <h2>Menemen</h2>
+          <p class="block-title">Ainekset</p>
+          <ul class="ainekset">
+            <li>250 g. tofu</li>
+            <li>rkl. soijakastike</li>
+            <li>40 g. paprika</li>
+            <li>4 rkl. tomaattipyre</li>
+            <li>mausteet</li>
+            <li>2 rkl. kasviöljy</li>
+            <li>10 g. sipuli</li>
+            <li>2 rkl. soijajogurtti</li>
+            <li>1 rkl. sokeria</li>
+          </ul>
+          <p class="block-title">Valmistus</p>
+          <ol class="steps">
+            <li>Hienonna sipuli ja kuumenna paistinpannu pienellä kasviöljyllä keskilämmöllä.</li>
+            <li>Paista sipulia mausteilla, kunnes sipuli muuttuu läpikuultavaksi.</li>
+            <li>Leikkaa paprika ohuiksi viipaleiksi ja lisää sipuliin.</li>
+            <li>Murenna tofu pannulle ja paista 5 minuuttia.</li>
+            <li>Lisää pannulle jogurtti, tomaattipasta ja soijakastike.</li>
+            <li>Keitä kannen alla 10 minuuttia.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banana bread muffinsit -->
+    <section class="recipe-detail" id="banana-bread">
+      <div class="container recipe-layout">
+        <div class="recipe-photo">
+          <img src="Kuvat/Reseptitsivu_kuvat/Muffinsit.png" alt="Banana bread muffinsit" />
+          <div class="meta">
+            <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>30 min</span>
+            <span class="meta-pill">Leivonta</span>
+          </div>
+        </div>
+        <div class="recipe-info">
+          <span class="eyebrow">Leivonta</span>
+          <h2>Banana bread muffinsit</h2>
+          <p class="block-title">Ainekset</p>
+          <ul class="ainekset">
+            <li>3 banaania</li>
+            <li>70 ml. maitoa</li>
+            <li>50 ml. kasviöljy</li>
+            <li>150 g. sokeria</li>
+            <li>400 g. jauhoja</li>
+            <li>2 tl leivinjauhe</li>
+          </ul>
+          <p class="block-title">Valmistus</p>
+          <ol class="steps">
+            <li>Muussaa banaanit haarukalla tasaiseksi.</li>
+            <li>Lisää niihin maito, kasviöljy ja sokeri ja sekoita.</li>
+            <li>Lisää seokseen jauhot ja leivinjauhe.</li>
+            <li>Sekoita tasaiseksi.</li>
+            <li>Kaada muffinivuokiin.</li>
+            <li>Kypsennä uunissa 13 minuuttia 180 ℃.</li>
+            <li>Tarkista valmius hammastikulla ja anna jäähtyä ennen käyttöä.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Liskon vihreä lautanen 🦎</h3>
+          <p>Kasvipohjaista ruokaa rakkaudella. Herkullisia vegaanireseptejä ja inspiraatiota kestävämpään arkeen.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sivut</h4>
+          <a href="index.html">Koti</a>
+          <a href="reseptit.html">Reseptit</a>
+          <a href="blogi.html">Blogi</a>
+          <a href="minusta.html">Minusta</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ota yhteyttä</h4>
+          <a href="mailto:lisa.maevskaia@gmail.com">lisa.maevskaia@gmail.com</a>
+          <span>Lisa Maevskaia</span>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Liskon vihreä lautanen · Tehty Helsingissä 💚</div>
+    </div>
+  </footer>
+
+  <script>
+    var header = document.getElementById('header');
+    window.addEventListener('scroll', function(){
+      header.classList.toggle('scrolled', window.scrollY > 8);
+    });
+    var toggle = document.getElementById('navToggle');
+    var nav = document.getElementById('nav');
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ nav.classList.remove('open'); });
     });
   </script>
-    <main>
-        <h1><span class="korostus">Reseptit</span></h1>
-        <ul class="customList">
-            <li><a href="#bataattikeitto">Bataattikeitto</a></li>
-            <li><a href="#menemen">Menemen</a></li>
-            <li><a href="#banana-bread">Banana bread muffinsit</a></li>
-        </ul>
-
-<div class="resepti-container">
-  <article class="resepti-card">
-      <h2 id="bataattikeitto"> Bataattikeitto </h2>
-      <div class="Bataattikeitto">
-        <img src="Kuvat/Reseptitsivu_kuvat/Bataattikeitto.png" alt="Bataattikeitto">
-      </div>
-    <p> <b>Nimi: </b> Bataattikeitto</p>
-    <p><b>Keittoaika:</b> 40-45 min.</p>
-    <p> <b>Aineosat:</b></p>
-      <ul>
-        <li>1 rkl (15 ml) oliiviöljyä</li>
-        <li>1 keskikokoinen sipuli kuutioituna</li>
-        <li>1 keskikokoinen purjo, kuituiset lehdet poistettu, hienonnettu</li>
-        <li>2 valkosipulinkynttä, viipaloitu</li>
-        <li>2½ kasvisliemikuutiota</li>
-        <li>5 kupillista (1200 ml) vettä</li>
-        <li>1 kesäkurpitsa, hienonnettuna</li>
-        <li>1 porkkana, hienonnettuna</li>
-        <li>1 keskikokoinen peruna, leikattu 1 cm:n kuutioiksi</li>
-        <li>1 iso bataatti, leikattu 1 cm:n kuutioiksi</li>
-        <li>mausteet </li></ul>
-    <p><b>Resepti:</b></p>
-      <ol>
-        <li>Kuumenna öljy isossa kattilassa korkealla lämmöllä. Kun se on kuuma, lisää sipuli, purjo ja valkosipuli. Keitä 5 minuuttia.</li>
-        <li>Lisää loput ainekset. Keitä hiljaisella lämmöllä osittain kannen alla 15 minuuttia tai kunnes perunat ovat kypsiä.</li>
-        <li>Sekoita osa keitosta sauvasekoittimella, mutta jätä muutama paloina jäämään. Vaihtoehtoisesti voit käyttää seisova tehosekoitinta, jolloin on suositeltavaa sekoittaa noin puolet keitosta.</li>
-      </ol>
-  </article>
-
-  <article class="resepti-card">
-    <h2 id="menemen">Menemen</h2>
-    <div class="Menemen">
-      <img src="Kuvat/Reseptitsivu_kuvat/Menemen.png" alt="Menemen">
-    </div>
-    <p> <b>Nimi: </b> Menemen</p>
-    <p><b>Keittoaika:</b> 30 min.</p>
-    <p> <b>Aineosat:</b></p>
-    <ul>
-      <li>250 g. tofu </li> 
-      <li> rkl. soijakastike</li>
-      <li>40 g. paprika</li>
-      <li>4 rkl. tomaattipyre</li>
-      <li>mausteet</li>
-      <li>2 rkl. kasviöljy</li>
-      <li>10 g. sipuli</li>
-      <li>2 rkl. soijajogurtti</li>
-      <li>1 rkl. sokeria</li>
-    </ul>
-
-    <p><b>Resepti:</b></p>
-    <ol>
-      <li>Hienonna sipuli ja kuumenna paistinpannu pienellä kasviöljyllä keskilämmöllä.</li>
-      <li>Paista sipulia mausteilla, kunnes sipuli muuttuu läpikuultavaksi.</li>
-      <li>Leikkaa paprika ohuiksi viipaleiksi ja lisää sipuliin.</li>
-      <li>Murenna tofu pannulle ja paista 5 minuuttia.</li>
-      <li>Lisää pannulle jogurtti, tomaattipasta ja soijakastike.</li>
-      <li>Keitä kannen alla 10 minuuttia.</li>
-    </ol>
-  </article>
-
-  <article class="resepti-card">
-    <h2 id="banana-bread">Banana bread muffinsit</h2>
-    <div class="banana-bread">
-      <img src="Kuvat/Reseptitsivu_kuvat/Muffinsit.png" alt="banana-bread muffinsit">
-    </div>
-    
-    <p><b>Keittoaika:</b> 30 min.</p>
-    <p> <b>Aineosat:</b></p>
-      <ul>
-        <li>3 banaania</li>
-        <li>70 ml. maitoa</li>
-        <li>50 ml. kasviöljy</li>
-        <li>150 g. sokeria</li>
-        <li>400 g. jauhoja</li>
-        <li>2 tl leivinjauhe</li>
-    </ul>
-
-    <p><b>Resepti:</b></p>
-      <ol>
-      <li>Muussaa banaanit haarukalla tasaiseksi;</li>
-      <li>Lisää niihin maito, kasviöljy ja sokeri ja sekoita;</li>
-      <li>Lisää seokseen jauhot ja leivinjauhe;</li>
-      <li>Sekoita tasaiseksi;</li>
-      <li>Kaada muffinivuokiin;</li>
-      <li>Kypsennä uunissa 13 minuuttia 180 ℃;</li>
-      <li>Tarkista valmius hammastikulla ja anna jäähtyä ennen käyttöä.</li>
-      </ol>
-  </article>
-</div>
-
-</main>      
-<footer>
-  <p><span class="korostus"> 
-    Liskon vihreä lautanen </span><br> Lisa Maevskaia <br> lisa.maevskaia@gmail.com</p>
-</footer>
 </body>
 </html>
