@@ -1,143 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Blogi - Liskon vihreä lautanen</title>
-    <meta name="description" content="Ajatuksia veganismista, ympäristöstä ja eettisestä ruokavaliosta. Sukella syvemmälle vegaanielämän merkitykseen Liskon blogissa.">
-    <meta name="keywords" content="vegaaniblogi, veganismi, ympäristö, eettinen ruokavalio, kasvisruoka, Liskon vihreä lautanen, ilmastonmuutos, eläinoikeudet">
-    <meta name="author" content="Elizaveta Maevskaia">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
-
-  
-   <link href="tyyli.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogi - Liskon vihreä lautanen</title>
+  <meta name="author" content="Elizaveta Maevskaia" />
+  <meta name="description" content="Ajatuksia veganismista, ympäristöstä ja eettisestä ruokavaliosta. Sukella syvemmälle vegaanielämän merkitykseen Liskon blogissa." />
+  <meta name="keywords" content="vegaaniblogi, veganismi, ympäristö, eettinen ruokavalio, kasvisruoka, Liskon vihreä lautanen, ilmastonmuutos, eläinoikeudet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tyyli.css" />
 </head>
-
 <body>
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <a href="index.html">
-        <img src="Kuvat/logo.png" alt="Liskon vihreä lautanen - logo"> </a>
-      </div>
-        <div class="menu-container">
-            <img src="Kuvat/burger.png" class="menu-icon" alt="Menu">
-            <nav id="menu" class="menu">
-                <ul class="navigaatio"> 
-                  <li><a href="index.html">KOTI</a></li>
-                  <li><a href="reseptit.html">RESEPTIT</a></li>
-                  <li><a href="blogi.html">BLOGI</a></li>
-                  <li><a href="minusta.html">MINUSTA</a></li>
-                </ul>
-            </nav>
-        </div>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Liskon vihreä lautanen — etusivu">
+        <img src="Kuvat/logo.png" alt="Liskon vihreä lautanen — logo" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Avaa valikko" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Koti</a>
+        <a href="reseptit.html">Reseptit</a>
+        <a href="blogi.html" class="active">Blogi</a>
+        <a href="minusta.html">Minusta</a>
+      </nav>
     </div>
   </header>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const menuIcon = document.querySelector(".menu-icon");
-      const menu = document.querySelector(".menu");
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow center">Blogi</span>
+      <h1>Liskon blogi</h1>
+      <p>Ajatuksia veganismista, ympäristöstä ja eettisestä ruokavaliosta — ja siitä, miksi kasvipohjaiset valinnat merkitsevät.</p>
+    </div>
+  </section>
 
-      menuIcon.addEventListener("click", function () {
-          menu.classList.toggle("active");
-      });
-  });
-</script>
+  <main class="container">
+    <!-- Artikkeli 1 -->
+    <article class="article">
+      <h2>Mitä tarkoittaa olla vegaani?</h2>
+      <img class="article-img" src="Kuvat/Blogisivu_kuvat/vegaani.png" alt="Vegaani" />
+      <p>Vegaani on henkilö, joka ei syö mitään eläinkunnasta peräisin olevia tuotteita kuten lihaa, kalaa, munia, maitotuotteita ja niiden johdannaisia. Vegaani ei myöskään osta eläinperäisiä vaatteita, kuten nahkaa ja villaa, eikä tue palveluita, jotka perustuvat eläinten riistoon.</p>
+      <p>Vegaaneja voi halutessaan luokitella monilla tavoin, mutta harva vegaanikaan mahtuu minkään tietyn kategorian alle. Vegaanit eivät ole yhtenäistä massaa, jolla olisi yhtenevä maailmankuva, vaan he ovat mitä erilaisimpia yksilöitä, jotka kaikki ovat kuitenkin syystä tai toisesta ryhtyneet vegaaneiksi.</p>
+      <p>Eläinten hyväksikäyttöön liittyvät eettiset ongelmat ovat todennäköisesti suurin yksittäinen syy veganismin omaksumiseen. Ekologiset syyt ovat joillakin puolestaan se tärkein seikka. Vegaaniksi aletaan myös terveyssyistä sekä uskonnollisista tai henkisistä syistä.</p>
+      <p>Veganismi liittyy myös ihmisoikeuksiin. Eläinten rehuksi menee 40 % maailman viljasadosta, mutta tämä vilja kelpaisi myös ihmisten ravinnoksi. Lihaa ja muita eläinperäisiä tuotteita syövä ihminen vaatii moninkertaisen maa-alan ruoantuotannolleen, koska ravintoa menee "hukkaan", kun se kierrätetään eläinten kautta.</p>
+      <a class="source-link" href="https://vegaaniliitto.fi/tietoa/mika-on-vegaani/" target="_blank" rel="noopener">Lähde: Vegaaniliitto &rarr;</a>
+    </article>
 
-    <main>
-      <h1><span class="korostus"> Liskon blogi </span></h1>
-      <article class="flex-container">
-        <div class="vegaani">
-          <img src="Kuvat/Blogisivu_kuvat/vegaani.png" alt="vegaani">
-        </div>
-        <div class="text-container">
-          <h2>Mitä tarkoittaa olla vegaani?</h2>
-            <p>Vegaani on henkilö, joka ei syö mitään eläinkunnasta peräisin olevia tuotteita kuten lihaa, kalaa, munia, maitotuotteita ja niiden johdannaisia. Vegaani ei myöskään osta eläinperäisiä vaatteita, kuten nahkaa ja villaa, eikä tue palveluita, jotka perustuvat eläinten riistoon.</p>
-            <p>Vegaaneja voi halutessaan luokitella monilla tavoin, mutta harva vegaanikaan mahtuu minkään tietyn kategorian alle. Vegaanit eivät ole yhtenäistä massaa, jolla olisi yhtenevä maailmankuva, vaan he ovat mitä erilaisimpia yksilöitä, jotka kaikki ovat kuitenkin syystä tai toisesta ryhtyneet vegaaneiksi.</p>
-            <p>Eläinten hyväksikäyttöön liittyvät eettiset ongelmat ovat todennäköisesti suurin yksittäinen syy veganismin omaksumiseen. Ekologiset syyt ovat joillakin puolestaan se tärkein seikka. Vegaaniksi aletaan myös terveyssyistä sekä uskonnollisista tai henkisistä syistä.</p>
-            <p>Veganismi liittyy myös ihmisoikeuksiin. Eläinten rehuksi menee 40 % maailman viljasadosta, mutta tämä vilja kelpaisi myös ihmisten ravinnoksi. Lihaa ja muita eläinperäisiä tuotteita syövä ihminen vaatii moninkertaisen maa-alan ruoantuotannolleen, koska ravintoa menee ”hukkaan”, kun se kierrätetään eläinten kautta.
-          </p>
-            
-            <p><a href="https://vegaaniliitto.fi/tietoa/mika-on-vegaani/ " target="_blank">Vegaaniliitto</a>
-          </p>
-        
-
-        </div>
-      </article>
-
-      <article class="flex-container">
-        <div class="veganismin_merkitys">
-          <img src="Kuvat/Blogisivu_kuvat/veganismin_merkitys_ymparistolle.png" alt="veganismin merkitys">
-        </div>
-        <div class="text-container">
-          <h2>Veganismi ja ympäristö</h2>
-          <p>Ilmastonmuutos, metsien hävitys ja vesivarojen ehtyminen ovat suuria ympäristöhaasteita, joihin ruokavalintamme vaikuttavat enemmän kuin usein ajattelemme. Veganismi ei ole pelkästään eettinen valinta eläinten puolesta - se on myös merkittävä teko ympäristön hyväksi.</p>
-  
-          <ol>
-            <li>
-              <b>Kasvipohjainen ruokavalio vähentää hiilijalanjälkeä</b>
-              <p>Eläinperäisen ruoan tuotanto tuottaa huomattavasti enemmän kasvihuonekaasupäästöjä kuin kasvipohjainen ruokavalio. Esimerkiksi naudanliha vaatii suuret määrät rehua, vettä ja maapinta-alaa, ja sen tuotanto tuottaa jopa 10 kertaa enemmän hiilidioksidipäästöjä kuin palkokasvit.</p>
-            </li>
-            <li>
-              <b>Vähemmän metsien hävitystä</b>
-              <p>Eläintuotanto on yksi suurimmista syistä sademetsien hakkuisiin. Suuria maa-alueita raivataan karjankasvatusta ja eläinten rehun, kuten soijan, viljelyä varten. Ironista kyllä, suurin osa maailman soijasta ei päädy ihmisten lautaselle, vaan eläinten rehuksi.</p>
-            </li>
-            <li>
-              <b>Vedenkulutuksen vähentäminen</b>
-              <p>Eläinperäinen ruoka kuluttaa huomattavasti enemmän vettä kuin kasvipohjainen. Esimerkiksi yhden kilon naudanlihan tuottamiseen kuluu keskimäärin 15 000 litraa vettä, kun taas vehnän tuotantoon tarvitaan vain noin 1 500 litraa kiloa kohden. Kasvipohjainen ruokavalio on siis merkittävä keino säästää arvokasta vettä.</p>
-            </li>
-          </ol>
-
-          <p><b>Pieni muutos, suuri vaikutus</b><br>
-          Vaikka kaikki eivät halua tai voi siirtyä täysin vegaaniseen ruokavalioon, jo pienetkin muutokset, kuten kasvisruoan lisääminen arkeen, voivat auttaa vähentämään ympäristökuormitusta. Jokainen kasvisateria on askel kohti kestävämpää tulevaisuutta.</p>
-        </div>
-        
-      </article>
-
-      <div class="qa-container">
-        <h2>Q&A</h2>
-    
-        <details>
-          <summary>Mikä on "Liskon vihreä lautanen"?</summary>
-          <p>Se on verkkosivusto, joka tarjoaa herkullisia ja helppoja vegaanisia reseptejä sekä tietoa kasvipohjaisesta ruokavaliosta ja sen vaikutuksista.</p>
-        </details>
-    
-        <details>
-          <summary>Kuka ylläpitää tätä sivustoa?</summary>
-          <p>Sivuston takana olen minä, Lisa, intohimoinen kasvisruoan ystävä, joka haluaa jakaa parhaat vegaanireseptit ja inspiroida muita kokeilemaan kasvipohjaista ruokaa.</p>
-        </details>
-    
-        <details>
-          <summary>Onko kaikki reseptit täysin vegaanisia?</summary>
-          <p>Kyllä! Kaikki reseptit ovat 100 % vegaanisia, eli ne eivät sisällä eläinperäisiä ainesosia kuten lihaa, maitotuotteita tai kananmunia.</p>
-        </details>
-    
-        <details>
-          <summary>Mistä vegaanit saavat proteiinia?</summary>
-          <p>Hyviä kasviproteiinin lähteitä ovat esimerkiksi linssit, pavut, kikherneet, tofu, tempeh, kvinoa ja pähkinät.</p>
-        </details>
-    
-        <details>
-          <summary>Pitääkö vegaanien ottaa lisäravinteita?</summary>
-          <p>Suositeltavaa on ainakin B12-vitamiinin lisä, koska sitä ei luonnollisesti löydy kasvisruoista. Myös D-vitamiinia ja omega-3-rasvahappoja voi olla hyvä täydentää tarvittaessa.</p>
-        </details>
-    
-        <details>
-          <summary>Mitä voin tehdä, jos perheeni tai ystäväni eivät ymmärrä vegaanisuuttani?</summary>
-          <p>Keskustelu ja herkullisten ruokien jakaminen voivat auttaa! Moni muuttaa mielipidettään, kun pääsee maistamaan hyvää kasvisruokaa.</p>
-        </details>
-    
+    <!-- Artikkeli 2 -->
+    <article class="article">
+      <h2>Veganismi ja ympäristö</h2>
+      <img class="article-img" src="Kuvat/Blogisivu_kuvat/veganismin_merkitys_ymparistolle.png" alt="Veganismin merkitys ympäristölle" />
+      <p>Ilmastonmuutos, metsien hävitys ja vesivarojen ehtyminen ovat suuria ympäristöhaasteita, joihin ruokavalintamme vaikuttavat enemmän kuin usein ajattelemme. Veganismi ei ole pelkästään eettinen valinta eläinten puolesta — se on myös merkittävä teko ympäristön hyväksi.</p>
+      <ol class="eco-list">
+        <li><strong>Kasvipohjainen ruokavalio vähentää hiilijalanjälkeä.</strong> Eläinperäisen ruoan tuotanto tuottaa huomattavasti enemmän kasvihuonekaasupäästöjä kuin kasvipohjainen ruokavalio. Esimerkiksi naudanliha vaatii suuret määrät rehua, vettä ja maapinta-alaa, ja sen tuotanto tuottaa jopa 10 kertaa enemmän hiilidioksidipäästöjä kuin palkokasvit.</li>
+        <li><strong>Vähemmän metsien hävitystä.</strong> Eläintuotanto on yksi suurimmista syistä sademetsien hakkuisiin. Suuria maa-alueita raivataan karjankasvatusta ja eläinten rehun, kuten soijan, viljelyä varten. Ironista kyllä, suurin osa maailman soijasta ei päädy ihmisten lautaselle, vaan eläinten rehuksi.</li>
+        <li><strong>Vedenkulutuksen vähentäminen.</strong> Eläinperäinen ruoka kuluttaa huomattavasti enemmän vettä kuin kasvipohjainen. Esimerkiksi yhden kilon naudanlihan tuottamiseen kuluu keskimäärin 15 000 litraa vettä, kun taas vehnän tuotantoon tarvitaan vain noin 1 500 litraa kiloa kohden. Kasvipohjainen ruokavalio on siis merkittävä keino säästää arvokasta vettä.</li>
+      </ol>
+      <div class="callout">
+        <p><strong>Pieni muutos, suuri vaikutus.</strong> Vaikka kaikki eivät halua tai voi siirtyä täysin vegaaniseen ruokavalioon, jo pienetkin muutokset, kuten kasvisruoan lisääminen arkeen, voivat auttaa vähentämään ympäristökuormitusta. Jokainen kasvisateria on askel kohti kestävämpää tulevaisuutta.</p>
       </div>
-        </main>      
-        <footer>
-          <p><span class="korostus"> 
-            Liskon vihreä lautanen </span><br> Lisa Maevskaia <br> lisa.maevskaia@gmail.com</p>
-        </footer>
-    </body>
-    </html>
+    </article>
+  </main>
+
+  <!-- Q&A -->
+  <section class="qa">
+    <div class="container">
+      <h2>Usein kysyttyä</h2>
+      <details>
+        <summary>Mikä on "Liskon vihreä lautanen"?</summary>
+        <p>Se on verkkosivusto, joka tarjoaa herkullisia ja helppoja vegaanisia reseptejä sekä tietoa kasvipohjaisesta ruokavaliosta ja sen vaikutuksista.</p>
+      </details>
+      <details>
+        <summary>Kuka ylläpitää tätä sivustoa?</summary>
+        <p>Sivuston takana olen minä, Lisa, intohimoinen kasvisruoan ystävä, joka haluaa jakaa parhaat vegaanireseptit ja inspiroida muita kokeilemaan kasvipohjaista ruokaa.</p>
+      </details>
+      <details>
+        <summary>Onko kaikki reseptit täysin vegaanisia?</summary>
+        <p>Kyllä! Kaikki reseptit ovat 100 % vegaanisia, eli ne eivät sisällä eläinperäisiä ainesosia kuten lihaa, maitotuotteita tai kananmunia.</p>
+      </details>
+      <details>
+        <summary>Mistä vegaanit saavat proteiinia?</summary>
+        <p>Hyviä kasviproteiinin lähteitä ovat esimerkiksi linssit, pavut, kikherneet, tofu, tempeh, kvinoa ja pähkinät.</p>
+      </details>
+      <details>
+        <summary>Pitääkö vegaanien ottaa lisäravinteita?</summary>
+        <p>Suositeltavaa on ainakin B12-vitamiinin lisä, koska sitä ei luonnollisesti löydy kasvisruoista. Myös D-vitamiinia ja omega-3-rasvahappoja voi olla hyvä täydentää tarvittaessa.</p>
+      </details>
+      <details>
+        <summary>Mitä voin tehdä, jos perheeni tai ystäväni eivät ymmärrä vegaanisuuttani?</summary>
+        <p>Keskustelu ja herkullisten ruokien jakaminen voivat auttaa! Moni muuttaa mielipidettään, kun pääsee maistamaan hyvää kasvisruokaa.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Liskon vihreä lautanen 🦎</h3>
+          <p>Kasvipohjaista ruokaa rakkaudella. Herkullisia vegaanireseptejä ja inspiraatiota kestävämpään arkeen.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sivut</h4>
+          <a href="index.html">Koti</a>
+          <a href="reseptit.html">Reseptit</a>
+          <a href="blogi.html">Blogi</a>
+          <a href="minusta.html">Minusta</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ota yhteyttä</h4>
+          <a href="mailto:lisa.maevskaia@gmail.com">lisa.maevskaia@gmail.com</a>
+          <span>Lisa Maevskaia</span>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Liskon vihreä lautanen · Tehty Helsingissä 💚</div>
+    </div>
+  </footer>
+
+  <script>
+    var header = document.getElementById('header');
+    window.addEventListener('scroll', function(){
+      header.classList.toggle('scrolled', window.scrollY > 8);
+    });
+    var toggle = document.getElementById('navToggle');
+    var nav = document.getElementById('nav');
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>
