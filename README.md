@@ -8,7 +8,7 @@ A responsive, multi-page website for plant-based recipes, a veganism & sustainab
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-222?style=flat-square&logo=github&logoColor=white)
 ![Grade](https://img.shields.io/badge/Course%20grade-5%2F5-3B7A57?style=flat-square)
 
-**🔗 Live site:** https://lisalizard.github.io/Liskon-vihrea-lautanen-1/
+**🔗 Live site:** https://lisalizard.github.io/Liskon-vihrea-lautanen/
 
 
 ## About the project
