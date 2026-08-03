@@ -76,7 +76,11 @@ A small set of tokens keeps the look consistent across all pages.
 
 ## Screenshots
 
+### Home page
+![Home page](Kuvat/screenshots/homepage.png)
 
+### FAQ
+![FAQ](Kuvat/screenshots/faq.png)
 
 ## Author
 
